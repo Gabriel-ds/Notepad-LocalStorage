@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Treinamento HTML, CSS e JS</title>
+
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/area-trabalho.css" />
+    <link rel="stylesheet" href="styles/novo-arquivo.css" />
+    <link rel="stylesheet" href="styles/barra-tarefas.css" />
+  </head>
+  <body>
+    <div class="area-trabalho">
+      <div class="area-trabalho__arquivos">
+        <div class="arquivo">
+          <img class="arquivo__icone" src="assets/document.png" />
+          <p class="arquivo__nome">Exemplo</p>
+        </div>
+      </div>
+
+      <form class="cadastro">
+        <h1>Novo arquivo</h1>
+
+        <label class="cadastro__rotulo" for="nome-arquivo">Nome</label>
+        <input
+          class="cadastro__input"
+          name="nome-arquivo"
+          id="nome-arquivo"
+          placeholder="Digite o nome do arquivo"
+          type="text"
+        />
+
+        <label class="cadastro__rotulo" for="conteudo-arquivo">Conteúdo</label>
+        <textarea
+          class="cadastro__input"
+          name="conteudo-arquivo"
+          id="conteudo-arquivo"
+          placeholder="Digite o conteúdo do arquivo"
+          rows="4"
+        ></textarea>
+
+        <div class="cadastro__botao-wrap">
+          <button type="button" class="salvar" id="salvar">Salvar</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="barra-tarefas">
+      <div class="barra-tarefas__grupo-esquerdo">
+        <img class="barra-tarefas__icone" src="assets/windows.svg" />
+        <div class="barra-tarefas__pesquisa">
+          <img class="barra-tarefas__icone" src="assets/lupa.svg" />
+        </div>
+        <img class="barra-tarefas__icone" src="assets/explorer.png" />
+        <img class="barra-tarefas__icone" src="assets/chrome.png" />
+        <img class="barra-tarefas__icone" src="assets/document.png" />
+      </div>
+      <div class="barra-tarefas__grupo-direito">
+        <div class="barra-tarefas__data-hora">
+          <div class="barra-tarefas__hora">02:28</div>
+          <div class="barra-tarefas__data">02/12/2021</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
